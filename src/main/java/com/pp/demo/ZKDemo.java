@@ -20,9 +20,7 @@ public class ZKDemo {
     private static final String CONNECT_ADDR = "192.168.0.104:2181";
 
     // 创建 ZooKeeper 实例
-    private ZooKeeper zk;
-
-       
+    private ZooKeeper zk;       
 
     // 初始化 ZooKeeper 实例
     private void createZKInstance() throws IOException, InterruptedException {
@@ -47,8 +45,6 @@ public class ZKDemo {
 		//进行阻塞
     	System.out.println("zk 连接中");
 		connectedSemaphore.await();
-
-
     }
 
     private void ZKOperations() throws IOException, InterruptedException, KeeperException {
